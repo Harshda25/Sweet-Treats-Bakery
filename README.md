@@ -2,6 +2,8 @@
  
 ![image](Screenshot.png)
 
+![image](Screenshot (297).png)
+
 Bakery is a mobile first, clean and responsive template built for a bakery.
 
 Built using HTML, CSS and Javascript.
