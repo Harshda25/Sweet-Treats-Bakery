@@ -76,9 +76,117 @@ body{
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn-buy:hover {
+    background-image: linear-gradient(135deg, rgb(245, 200, 235) 10%, pink 100%);
+    transform: scale(1.10);
 }
 .title-name{
     font-size: 35px;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .card-container {
+        width: 45%;
+        margin: 20px 10px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 25px;
+    }
+
+    .quantity-img {
+        width: 30px;
+    }
+
+    .quantity-total {
+        font-size: 16px;
+    }
+
+    .btn-buy {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .product-img {
+        height: 150px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 22px;
+    }
+
+    .quantity-img {
+        width: 25px;
+    }
+
+    .quantity-total {
+        font-size: 14px;
+    }
+
+    .btn-buy {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .title-name {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .product-img {
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-price, .quantity-text {
+        font-size: 20px;
+    }
+
+    .quantity-img {
+        width: 20px;
+    }
+
+    .quantity-total {
+        font-size: 12px;
+    }
+
+    .btn-buy {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .title-name {
+        font-size: 24px;
+    }
 }

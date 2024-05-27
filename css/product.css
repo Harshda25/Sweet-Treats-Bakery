@@ -44,6 +44,12 @@ main {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.card-content button:hover {
+    background-image: linear-gradient(135deg, rgb(245, 200, 235) 10%, pink 100%);
+    transform: scale(1.10);
 }
 
 /* Responsive design */
@@ -55,5 +61,52 @@ main {
 
     .product-card img {
         width: 100px;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .card-content h3 {
+        font-size: 22px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .card-content button {
+        width: 100%;
+        padding: 10px;
     }
 }

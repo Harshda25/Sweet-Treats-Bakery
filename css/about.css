@@ -53,14 +53,80 @@ main {
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .review-form button {
     background-image: linear-gradient(135deg, pink 10%, rgb(245, 200, 235) 100%);
     color: #fff;
-    color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.review-form button:hover {
+    background-image: linear-gradient(135deg, rgb(245, 200, 235) 10%, pink 100%);
+    transform: scale(1.10);
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .team-member, .review {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        width: 95%;
+    }
+
+    .team-container, .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member, .review {
+        width: 80%;
+    }
+
+    .review-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-content {
+        font-size: 16px;
+    }
+
+    .team-member img, .review img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-member, .review {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .review-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .review-form button {
+        width: 100%;
+        padding: 10px;
+    }
 }
