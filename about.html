@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sweet Treats Bakery</title>
+    <title>About Us - Sweet Treats Bakery</title>
     <link rel="stylesheet" href="./../css/styles.css">
-    <link rel="stylesheet" href="./../css/contact.css">
+    <link rel="stylesheet" href="./../css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,7 +15,7 @@
             <h1 class="header-title">Sweet Treats Bakery</h1>
             <nav>
                 <ul>
-                    <li><a href="./../index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="product.html">Products</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -28,36 +28,48 @@
         </div>
     </header>
     <main>
-        
-            <section>
-                <h2>Contact Us</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to give feedback, we're here to help.</p>
-                        <p><strong>Phone:</strong> (123) 456-7890</p>
-                        <p><strong>Email:</strong> contact@sweettreatsbakery.com</p>
-                        <p><strong>Address:</strong> 123 Bakery St, Sweet City, SC 12345</p>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contact-form" onsubmit="return validateForm()">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+        <div class="about-container">
+            <h2 class="section-title">Our Story</h2>
+            <p class="section-content">
+                Welcome to Sweet Treats Bakery! Our journey began in a small kitchen with a passion for baking and a dream to bring joy to people through delicious and beautiful baked goods. Founded in 2010, we have grown into a beloved bakery known for our commitment to quality, creativity, and community.
+            </p>
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-content">
+                At Sweet Treats Bakery, our mission is to create the finest baked goods using the best ingredients and traditional techniques. We strive to bring a smile to every customer’s face with our delightful treats and exceptional customer service.
+            </p>
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="./../images/team1.jpg" alt="Alice Baker">
+                    <h3>Rohit Sharma</h3>
+                    <p>Founder & Master Baker</p>
                 </div>
-            </section>
-        </main>
-        <!-- Contact Us content goes here -->
-    
+                <div class="team-member">
+                    <img src="./../images/team2.jpg" alt="Bob Pastry">
+                    <h3>Rajveer Patil</h3>
+                    <p>Head Pastry Chef</p>
+                </div> 
+                <div class="team-member">
+                    <img src="./../images/team3.jpg" alt="Carol Sweets">
+                    <h3>Anushka Pujari</h3>
+                    <p>Customer Relations</p>
+                </div>
+            </div>
+        
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review-container" id="review-container">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+            <div class="review-form">
+                <h3>Leave a Review</h3>
+                <input type="text" id="reviewer-name" placeholder="Your Name">
+                <textarea id="review-text" rows="4" placeholder="Your Review"></textarea>
+                <button onclick="addReview()">Submit Review</button>
+            </div>
+        </div>
+    </main>
+
+
     <footer>
         <div class="footer-container">
             <div class="footer-content">
@@ -88,8 +100,8 @@
         <div class="bottom-bar">
             <p>&copy;  @ 2024 Sweet Treats Bakery. All Right Reserved</p>
         </div>
-
+    
     </footer>
-    <script src="js/contact.js"></script>
+    <script src="./../js/about.js"></script>
 </body>
 </html>
