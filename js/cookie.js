@@ -28,5 +28,5 @@ function decrement(cardId) {
 
 function setQuantityandToatal(quantity, quantityTotal, productPrice) {
     quantityTotal.innerText = `Quantity: ${quantity}`;
-    productPrice.innerText = `₹ ${65 * quantity}`;
+    productPrice.innerText = `₹ ${70 * quantity}`;
 }
